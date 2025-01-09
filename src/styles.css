@@ -1,0 +1,803 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* DEFINICION DE VARIABLES */
+:root {
+
+
+    --color-background-footer: #203754ae;
+    --color-background-header: #f1f1f6;
+    --color-buttons: rgba(136, 136, 251, 0.88);
+    --color-buttons-hover: #49316d;
+    --color-fonts: #4c4b4b;
+    --font-titulo: "Roboto", sans-serif;
+    --font-texto: "Lato", sans-serif;
+    --font-size_titulo: 1rem;
+    --font-size_texto: .8rem;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    min-height: 100dvh;
+    min-width: 100dvw;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: var(--color-background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--color-fonts);
+    font-size: var(--font-size_texto);
+    font-family: var(--font-titulo);
+    height: auto;
+    width: 100%;
+}
+SCROLL TOP BUTTON
+   ========================================== */
+/* Estilo del botón */
+   .back-to-top {
+      position:absolute;
+      bottom: 120px;
+      left: 120px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 120px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      display: none; /* Ocultamos el botón inicialmente */
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+section h1{
+    font-size:30px;
+    color:#352121;
+    text-align:center;
+    text-decoration-line: underline;
+}
+.contacto{
+background-color:fff !important;
+color:green;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* formato  nav flotante */
+.nav--flotante {
+    /* display: flex; */
+    justify-content: space-around;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    background-color: var(--color-background-footer);
+    height: 4.5rem;
+    width: 100%;
+}
+
+.iconos--list-flotante {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+/* fin formato  nav flotante */
+
+/* formato flecha arriba */
+.myBtn--img {
+    width: 3rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+/* formato header */
+.header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0em;
+    background-color: var(--color-background-header);
+    font-family: var(--font-titulo);
+    font-size: 0.9em;
+    width: 100%;
+}
+
+
+.imagen--button {
+    background-color: var(--color-background-cajas);
+}
+
+.header--imagen {
+    width: 60px;
+    padding:10px;
+    margin-left: 20px;
+}
+
+.header--iconos-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+    margin-right: 1em;
+}
+
+.header--nav-list {
+    vertical-align: middle;
+    padding-left: 1.5em;
+    margin: auto;
+}
+
+.header--nav-item {
+    text-decoration: none;
+    color: black;
+    margin: 0 0.4em;
+    padding: 0.3em;
+    border-bottom: solid 1px #000;
+}
+
+.header--nav-item:last-child {
+    border-bottom: none;
+}
+
+.header--nav-button,
+.imagen--button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    right: 1em;
+    background-color: #7f55fb;
+}
+
+
+/* secciones */
+.imagen-banner {
+    width: 100%;
+
+}
+
+.main--imagen-perfil {
+    width: 120px;
+    margin-left: 25%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7em 2em;
+    gap: 3em;
+}
+
+.iconos--redes {
+    text-align: center;
+    align-content: center;
+    gap: 0.9em;
+}
+
+.bio--icono {
+    width: 2.5em;
+
+}
+
+.presentacion--texto {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+}
+.aboutme{
+    padding:30px;
+}
+/* seccion grilla formaciones y proyectos*/
+.formaciones--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1em;
+}
+
+.formaciones--card {
+    background: var(--color-background-cards);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1em 1.5em;
+    transition: transform 0.3s ease-in-out, z-index 0.3s;
+}
+
+
+
+.card--img {
+    width: 20rem;
+    object-fit: cover;
+}
+
+.formaciones--card-description,
+.proyecto--card-description {
+    width: 90%;
+    white-space: wrap;
+    padding: .3em .2em;
+    flex-grow: 1;
+}
+
+span.formaciones--card-description {
+    color: black;
+}
+
+.formaciones--card-title,
+.proyecto--card-title {
+    padding-top: .6em;
+}
+
+.proyectos--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1em;
+}
+
+.proyectos--card {
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1em 1.5em;
+    transition: transform 0.3s ease-in-out, z-index 0.3s;
+}
+
+.proyecto--card-img {
+    width: 25rem;
+    object-fit: cover;
+}
+
+.card--buttons {
+    display: flex;
+    gap: 1em;
+    padding-top: .8em;
+    justify-content: baseline;
+    color: whitesmoke;
+}
+
+.proyecto--link-repo {
+    background-color: var(--color-buttons-hover);
+    padding: .6em .9em;
+    border-radius: .4em;
+    font-weight: 500;
+}
+
+
+/* seccion skills */
+.section--skills-item h2 {
+    padding: 0.8em;
+}
+
+.imagen--soft,
+.imagen--hard,
+.imagen--hobby {
+    width: 9em;
+    border: solid white 2px;
+    padding: 0.5em;
+    background: var(--color-background-cards);
+}
+
+.section--hard-list >li>img{
+    filter: grayscale(60%);
+    width:180px;
+}
+.section--hard-list >li>img:hover{
+    filter: grayscale(0%);
+}
+.section--soft-list >li>img{
+
+    width:180px;
+}
+ul.section--hard-list,
+ul.section--soft-list,
+ul.section--hobby-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 3em;
+}
+.section--hobby-list>li{
+    background-color:#67a855;
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 20px;
+      width: 190px;
+}
+
+.section--hard-item,
+.section--soft-item,
+.section--hobby-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+
+}
+
+/* formato formulario contacto */
+.error {
+    color: red;
+}
+
+#success-message {
+    color: green;
+    font-size: larger;
+    text-align: center;
+    font-weight: 600;
+}
+
+.alert {
+    position: fixed;
+    background: linear-gradient(rgba(127, 155, 194, 0.933),
+            rgba(125, 125, 125, 0.88));
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    color: rgb(2, 2, 2);
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 1em 2em;
+    border-radius: 0.8em;
+}
+
+.contact--text {
+    padding-bottom: 1em;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#contacto h1 {
+    font-size: 2em;
+}
+
+form {
+    margin: 0.8em auto;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em rgb(52, 52, 52);
+}
+
+form li+li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 0.7em;
+    font-weight: 500;
+}
+
+input {
+    height: 3em;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5em 0.9em;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    color: #000;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #7004f4;
+}
+
+textarea {
+    vertical-align: top;
+    height: 6em;
+}
+
+.item-button {
+    text-align: center;
+
+}
+
+.form-button:enabled {
+    align-self: center;
+    padding: 0.8em 1.3em;
+    text-align: center;
+    border-radius: 0.3em;
+    background-color: var(--color-buttons);
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black
+}
+
+.form-button:enabled:hover {
+    background: var(--color-buttons-hover);
+    color: #fcfbfb;
+}
+
+.contacto--msj {
+    display: inline-flex;
+    margin-left: 2em;
+    font-weight: 500;
+    padding-top: 1em;
+}
+
+/* formato footer */
+.footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--font-size_texto);
+    margin-bottom: 0.7em;
+    margin-top: 1em;
+}
+
+.footer--redes-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer--redes-item {
+    margin: 0 0.8em;
+    align-self: center;
+}
+
+.icono--footer {
+    width: 2.3em;
+}
+
+.d1{
+margin-left:200px;
+float:left;
+width:400px;
+}
+.d2{
+float:left;
+width:600px;
+}
+/* pantallas medianas (tablets) */
+@media (min-width: 560px) {
+    .header {
+        font-size: 1.2rem;
+
+    }
+
+    /* oculta el boton en pantallas medianas y grandes */
+    .button-menu {
+        display: none;
+    }
+
+    .lista-iconos {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .header--nav-list {
+        display: none;
+
+    }
+
+    .header--nav-item {
+        border-bottom: none;
+    }
+
+    .iconos--list {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main--imagen-perfil {
+        width: 15em;
+        margin-left: 0%;
+    }
+
+
+
+    /* formato formaciones */
+    .formaciones--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2em;
+
+    }
+
+    /* formato proyectos */
+    .proyectos--container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap: 1em;
+    }
+
+    /* contacto */
+    form {
+        margin: 0 auto;
+        width: 80%;
+        padding: 1.5em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+    }
+
+    .alert {
+        top: 10rem;
+        left: 50%;
+        padding: 1.5em 3em;
+    }
+
+    .contact--text {
+        padding-bottom: 1.3em;
+    }
+
+    .contacto--msj {
+        display: inline-flex;
+        margin-left: 10%;
+        font-weight: 500;
+        padding-top: 1em;
+    }
+}
+
+/* pantallas grandes (desktops) */
+@media (min-width: 757px) {
+    .header {
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: center;
+        align-self: center;
+    }
+
+    .header--nav-list {
+        display: flex;
+
+    }
+
+    .header--nav-item {
+        text-decoration: none;
+        color: black;
+        margin: 0 0.4em;
+        padding: 0.3em;
+        border-bottom: none;
+        vertical-align: middle;
+    }
+
+    /* oculta la lista de iconos en pantallas grandes */
+    .header--iconos-list {
+        display: none;
+    }
+
+    .main--imagen-perfil {
+        width: 15em;
+        margin-left: 1%;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .presentacion--texto {
+        width: 600px;
+        padding: 0.6rem;
+        font-size: 1.2em;
+    }
+
+    #aboutme p {
+        font-size: 1.2rem;
+    }
+
+    /* formato formaciones */
+    .formaciones--container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        padding:30px;
+    }
+
+    /* formato proyectos */
+    .proyectos--container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 1em auto;
+        gap: 1.5em;
+    }
+
+    .proyecto--card-img {
+        width: 30rem;
+        object-fit: cover;
+    }
+
+
+    /* formulario de contacto */
+
+    .alert {
+        top: 10rem;
+        left: 50%;
+        padding: 4em 3em;
+    }
+
+    .contact--text {
+        padding-bottom: 1.6em;
+    }
+
+    form {
+        margin: 1em auto;
+        width: 100%;
+        padding: 1em;
+    }
+
+    form li+li {
+        margin-top: 0.7em;
+    }
+
+    .form-button {
+        align-self: center;
+        padding: 1em 2em;
+        text-align: center;
+        border-radius: 0.3em;
+    }
+
+    label {
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 0.7em;
+    }
+
+    input {
+        height: 2.6em;
+    }
+
+    textarea {
+        height: 5em;
+    }
+
+    .contacto--msj {
+        display: inline-flex;
+        margin-left: 20%;
+        font-weight: 500;
+        padding-top: 1em;
+    }
+
+    .footer {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+
+    .icono--footer {
+        width: 3em;
+    }
+}
+
+/* estilos para impresion */
+
+/* Estilos generales para la impresión */
+@media print {
+
+    /* Eliminar elementos innecesarios */
+    /* no imprime formulario de contacto, ni iconos de navegacion, ni footer */
+    form,
+    .myBtn,
+    .myBtn--img,
+    .nav--flotante,
+    #contacto,
+    .imagen-banner,
+    nav,
+    .footer,
+    .no-print {
+        display: none !important;
+    }
+
+    /* Ajustar el contenido al ancho de la página */
+    body {
+        margin: 0;
+        padding: 0.5cm;
+        font-size: 12pt;
+        background: none;
+        background-color: white;
+    }
+
+    /* Ajustar imágenes para que se vean bien en PDF */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* Forzar los enlaces a mostrarse como texto */
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .presentacion--texto {
+        display: block;
+        box-shadow: none;
+    }
+
+    section.bio img {
+        padding-top: 0;
+        width: 20%;
+    }
+
+    /* Formatear la grilla de formaciones y proyectos */
+    .formaciones--container,
+    .proyectos--container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .formaciones--card,
+    .proyectos--card {
+        border: 1px solid #000;
+        padding: 8px;
+
+    }
+
+    .section--skills-lista {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    ul.section--hard-list,
+    ul.section--soft-list,
+    ul.section--hobby-list {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    li.section--hard-item,
+    li.section--soft-item,
+    li.section--hobby-item {
+        display: block;
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+
+    .section--skills-lista img {
+        display: none;
+    }
+
+}
+
