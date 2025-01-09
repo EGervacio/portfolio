@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mi Portfolio - FrontEnd de AluraONE">
+    <link rel="shortcut icon" href="img/soccer-ball.ico">
+<!--    <link rel="stylesheet" href="./src/css/reset.css">-->
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Portfolio Eloy</title>
+</head>
+
+<body>
+<button id="backToTopBtn" class="back-to-top" onclick="scrollToTop()">↑ Volver al inicio</button>
+    <!-- seccion header -->
+    <header class="header">
+        <a href="#home" >
+            <img src="img/programmer.png" alt="Logo Perfil" class="header--imagen">
+        </a>
+        <nav class="header--nav">
+            <ul class="header--nav-list" >
+                <li class="header--nav-item">
+                    <a href="#aboutme">Sobre Mi </a>
+                </li>
+                <li class="header--nav-item">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="header--nav-item">
+                    <a href="#hobbies">Hobbies</a>
+                </li>
+                <li class="header--nav-item">
+                    <a href="#formaciones">Formaciones</a>
+                </li>
+                <li class="header--nav-item">
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                <li class="header--nav-item">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+
+        <section id="home" class="bio">
+            <aside class="presentacion--texto">
+                <h1>Presentación</h1>
+                <h2>Hola soy <b>Eloy</b> y soy de Peru</h2>
+                <h3>Actualmente me vengo preparando para ser un desarrollador Web. </h3>
+                <p>me estoy preparando en el programa de Alura Latam, para obtener nuevos conocimientos
+                y la experiencia necesaria para formarme como un programador... </p>
+                <div class="iconos--redes">
+                     <img src="img/message.png"  class="bio--icono">
+                </div>
+            </aside>
+            <img src="img/programmer.png" class="imagen main--imagen-perfil">
+        </section>
+        <section id="aboutme" class="aboutme">
+            <h1>Sobre mi</h1>
+            <p> Me gusta la tecnología</p>
+            <p>Llevo algunos anios dedicandome a las redes y comunicaciones, tengo conocimientos en configuracion
+            y administracion de redes</p>
+            <p>He trabajo en un ISP donde aprendi acerca de cableado estructurado, internet saltelital y fibra optica</p>
+            <p>En ocasiones era necesario tener conocimientos acerca de programacion, es por ello que decidi
+            aprender del mundo de la programacion y el desarrollo FrontEnd me parecio muy interensante y ahora venga
+            preparandome para ello...</p>
+            <h3>Atte. Eloy</h3>
+        </section>
+
+        <section id="skills" class="section--skills-lista">
+            <h1>Skills
+            </h1>
+                <div class="section--skills-item">
+                    <h2>Hard Skills</h2>
+                    <ul class="section--hard-list">
+                        <li class="section--hard-item">
+                            <img src="img/skills/html5.png" >
+                        </li>
+                        <li class="section--hard-item">
+                            <img src="img/skills/css.png" >
+                        </li>
+                        <li class="section--hard-item">
+                            <img src="img/skills/js.png"  >
+                        </li>
+                        <li class="section--hard-item">
+                            <img src="img/skills/mysql.png" >
+                        </li>
+                    </ul>
+                    <h2>Hard Skills-Networks</h2>
+                    <ul class="section--hard-list">
+                        <li class="section--hard-item">
+                            <img src="img/skills/cisco.png" class="imagen--hard">
+                        </li>
+                        <li class="section--hard-item">
+                            <img src="img/skills/mikrotik.png" class="imagen--hard">
+                        </li>
+                        <li class="section--hard-item">
+                            <img src="img/skills/tplink.png" class="imagen--hard">
+                        </li>
+                        <li class="section--hard-item">
+                            <img src="img/skills/huawei.png"  class="imagen--hard">
+                        </li>
+                    </ul>
+                </div>
+                <div class="section--skills-item">
+                    <h2>Soft Skills</h2>
+                    <ul class="section--soft-list">
+                        <li class="section--soft-item"><img src="img/skills/comunicacion.png"
+                                class="imagen--soft">
+                        </li>
+                        <li class="section--soft-item"><img src="img/skills/actitud-positiva.png"
+                                 class="imagen--soft">
+                        </li>
+                        <li class="section--soft-item"><img src="img/skills/creatividad.png"
+                                 class="imagen--soft">
+                        </li>
+                        <li class="section--soft-item"><img src="img/skills/liderazgo.png"
+                                 class="imagen--soft">
+                        </li>
+                        <li class="section--soft-item"><img src="img/skills/pensamiento-critico.png"
+                                 class="imagen--soft">
+                        </li>
+                    </ul>
+                </div>
+
+        </section>
+        <section id="hobbies" class="section--skills-item">
+            <h1>Hobbies</h1>
+            <p>Algunos de mis pasatiempos favoritos son:</p>
+            <ul class="section--hobby-list">
+                <li class="section--hobby-item">Escuchar música
+                </li>
+                <li class="section--hobby-item">Ver series y peliculas
+                </li>
+                <li class="section--hobby-item">Jugar Voley
+                </li>
+                <li class="section--hobby-item">treking
+                </li>
+                 <li class="section--hobby-item">Dibujar
+                </li>
+            </ul>
+        </section>
+         <section id="formaciones">
+            <h1>Formaciones</h1>
+            <div class="formaciones--container">
+                <div class="formaciones--card">
+                    <img src="img/alura.png" alt="Icono Alura Oracle" class="card--img">
+                    <h2 class="formaciones--card-title">Principiante en Programación G7 - ONE</h2>
+                    <p class="formaciones--card-description">Guía introductoria a la programación y
+                        comenzar con la creación de páginas web utilizando los lenguajes populares de HTML, CSS
+                        y JavaScript</p>
+                    <span class="formaciones--card-description">En desarrollo</span>
+                </div>
+                <div class="formaciones--card">
+                    <img src="img/cisco-network.png" alt="Icono Cisco" class="card--img">
+                    <h2 class="formaciones--card-title">Introduccion a la redes</h2>
+                    <p class="formaciones--card-description">DBienvenido al curso de Introducción a las Redes (ITN)..
+                        Este curso presenta la arquitectura, la estructura, las funciones, los componentes y
+                        los modelos de Internet y de otras redes informáticas
+                    </p>
+                    <span class="formaciones--card-description">Setiembre 2023</span>
+                </div>
+                <div class="formaciones--card">
+                    <img src="img/cisco-network.png" alt="Icono Buenos Aires aprende" class="card--img">
+                    <h2 class="formaciones--card-title">Introduccion a la Cyberseguridad </h2>
+                    <p class="formaciones--card-description">La ciberseguridad es el esfuerzo continuo para proteger
+                        a las personas, las organizaciones y los gobiernos de los ataques digitales mediante la protección
+                        de los sistemas y datos en red contra el uso o daño no autorizados</p>
+                    <span class="formaciones--card-description">Mayo 2023</span>
+                </div>
+
+
+                <div class="formaciones--card">
+                    <img src="./assets/formaciones/ap40.jpeg" alt="Icono Argentina Programa 4.0" class="card--img">
+                    <h2 class="formaciones--card-title">Web Development</h2>
+                    <p class="formaciones--card-description"> sitio web para aprender conceptos basico de programacion
+                    sobre html,css y js</p>
+                    <span class="formaciones--card-description">Diciembre 2022</span>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="proyectos">
+            <h1>Proyectos</h1>
+            <!-- crear un grid con tarjetas de proyectos  -->
+            <div class="proyectos--container">
+                <div class="proyectos--card">
+                    <h2 class="proyecto--card-title">Encriptador de textos</h2>
+                    <img src="img/encriptador.png"
+                        class="proyecto--card-img">
+                    <p class="proyecto--card-description">Proyecto que sirve para encriptar y desencriptar textos.
+                    </p>
+                    <p class="proyecto--card-description"> HTML, CSS, JavaScript</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="contacto" class="contacto">
+            <h1 class="contact--tittle">Contacto</h1>
+            <div class="d1">
+                <img src="img/formulario.jpg" >
+            </div>
+
+            <div class="d2">
+                <h2>Completa el siguiente formulario!</h2>
+
+                <form id="contact-form" class="contact-form">
+                    <ul>
+                        <li>
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" autocomplete="name" placeholder="Ingresa tu nombre" />
+                            <span id="name-error" class="error"></span>
+                        </li>
+                        <li>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" autocomplete="email"
+                                placeholder="Ingresa tu correo" />
+                            <span id="email-error" class="error"></span>
+                        </li>
+                        <li>
+                            <label for="subject">Asunto:</label>
+                            <input type="text" id="subject" name="subject" autocomplete="subject"
+                                placeholder="El asunto de tu mensaje" />
+                        </li>
+                        <li>
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" placeholder="Escriba aquí su consulta."
+                                autocomplete="off"></textarea>
+                        </li>
+                        <li class="item-button">
+                            <button id="submit-button" type="submit" class="form-button" value="Enviar"
+                                >Enviar</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <span>&copy; 2024 - Todos los derechos reservados</span>
+    </footer>
+
+<script src="src/script.js"></script>
+ </body>
+
+</html>
